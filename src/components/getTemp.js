@@ -11,7 +11,7 @@ app.use(json());
 
 
 var url = "http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=62c585309442241f836aee04f6f3118d";
-var api = "/api.openweathermap.org/data/2.5/forecast?id=524901&APPID=62c585309442241f836aee04f6f3118d";
+var api = "api.openweathermap.org/data/2.5/forecast?id=524901&APPID=62c585309442241f836aee04f6f3118d";
 function getTemp() {
     var urlString = url + getLocation();
     var ctemp = app.get(urlString, function(req,res,next) {
